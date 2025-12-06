@@ -1,50 +1,107 @@
 @charset "utf-8";
 /* CSS Document */
 * {
-	box-siz: border-box;
 	margin: 0;
 	padding: 0;
+}
+
+body{
+	min-height: 100vh;
+	background-color: rgb(58, 58, 154);
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav{
 	background-color: white;
+	box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
 }
 
-header {
-	display: flex;
-	justify-content: space-between;
-	align-item: center;
-	padding: 30px 10%;
-	background-color: navy;
-}
-
-.logo {
-	cursor: pointer;
-}
-
-.nav_links {
+nav ul{
+	width: 100%;
 	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 }
 
-.nav_links li {
-	display: inline-block;
-	padding: 0px 10px;
+nav li {
+	height: 50px;
+	display: flex;
 }
 
-.nav_links li a {
-	transition: all 0.3 ease 0s;
+nav a {
+	height: 100%;
+	padding: 0 30px;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	color: black;
+	transition: background-color 150ms ease;
 }
 
-.nav_links li a:hover{
-	color: black
+nav a:hover {
+	background-color: #f0f0f0;
 }
 
-button {
-	padding: 9px 25px;
-	background-color: #4B42C3;
-	border: none;
-	border-radius: 50px;
-	cursor: pointer;
-	transitoin: all 0.3s ease 0s;
+nav li:first-child{
+	margin-right: auto;
 }
 
-button:hover {
-	background-color: white;
+
+
+.CTA{
+	background-color: rgba(173, 216, 230, 1);
 }
+
+.CTA:hover{
+	background-color: rgba(173, 216, 230, 0.5);
+}
+
+.sidebar {
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100vh;
+	width: 250px;
+	z-index: 999;
+	background-color: rgba(255, 255, 255, 0.466);
+	backdrop-filter: blur(10px);
+	box-shadow: -10px 0 10px rgba(0,0,0,0,0.1);
+	transform: translateX(100%);
+	display: flex;
+	flex-direction: column;
+	transition: transform 0.3s ease;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.sidebar li {
+	width: 100%;
+}
+
+.sidebar a{
+	width: 100%;
+}
+#activeLink {
+	border-bottom: 2px solid lightblue;
+}
+
+@media(max-width: 675px) {
+	.hideOnMobile{
+		display: none;
+	}
+}
+
+@media(max-width: 400px) {
+	.sidebar{
+		width: 100%;
+	}
+}
+
+@media(min-width: 675px) {
+	.hideOnDesktop{
+		display: none;
+	}
+}
+
+
