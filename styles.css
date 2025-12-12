@@ -137,12 +137,29 @@ nav li:first-child{
 }
 
 .titlepage h1 {
-	font-size: clamp(5rem, 8rem, 8rem);
+	font-size: clamp(5rem, 8vw, 9rem);
 	font-weight: 700;
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
 }
+
+.titlepage h2 {
+	font-size: clamp(2rem, 2vw, 4rem);
+	font-weight: 400;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.titlepage h3 {
+	font-size: clamp(1rem, 1vw, 1.5em);
+	font-weight: 300;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
 
 .titlepage img {
 	padding-top: 50px;

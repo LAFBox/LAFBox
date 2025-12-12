@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAFBox Signin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+		<!--Reduced navigation bar for the signin page. most links removed to reduce clutter. .-->
+		<ul>
+			<li><a href="#" class="exclude" >LAF Box</a></li>
+		</ul>
+	</nav>
+
+    <div class="mainbox">
+        <div class="signin">
+            <h1>Sign into LAFBox</h1>
+            <div class="schoolselector">
+                <label for="schools">Choose your school:</label>
+                <select aria-label="List of Schools" id="schools">
+                    <option value="default">Select your school.</option>
+                    <option value="SCHS">St. Charles High School</option>
+                </select>
+            </div>
+            <div class="email">
+                <label for="email">Email:</label>
+                <input aria-label="Email" id="email">
+            </div>
+            <div class="password">
+                <label for="password">Password:</label>
+                <input aria-label="page">
+            </div>
+            <button>Sign In</button>
+        </div>
+    </div>
+</body>
+</html>

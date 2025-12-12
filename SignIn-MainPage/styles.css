@@ -1,0 +1,65 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+/* CSS Document */
+
+/*CSS for navbar and related components */
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	min-height: 100vh;
+	background-color: #D6CAA7;
+	font-family: "Ubuntu";
+	font-weight: 500;
+	/*background-image: url('https://placehold.co/600x400');*/
+}
+
+nav{
+	background-color: white;
+	box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+}
+
+nav li {
+	height: 60px;
+	display: flex;
+	align-items: center;
+}
+
+nav a {
+	height: 100%;
+	padding: 0 50px;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	color: black;
+	transition: background-color 0.15s linear;
+}
+
+nav li:first-child{
+	margin-right: auto;
+	font-size: 1.5rem;
+}
+
+.activeLink {
+	border-bottom: 2px solid hsl(36, 59%, 61%);
+}
+
+
+/* CSS Styling for the sign-in */
+
+.mainbox {
+	display: grid;
+	place-items: center;
+	height: 90vh;
+}
+
+.signin {
+	width: 50vw;
+	background-color: white;
+	display: block;
+	text-align: center;
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
