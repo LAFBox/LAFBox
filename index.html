@@ -5,6 +5,8 @@
 	<meta charset="UTF-8">
 	<title>LAF Box</title>
 	<link rel="stylesheet" href="styles.css">
+	<!--Linking the external script to add functionality to the website.-->
+	<script src="sidebarscript.js"></script>
 </head>
 <body>
 	<nav>
@@ -34,20 +36,6 @@
 		<h3 class="item">The solution to an age-old problem.</h3>
 		<!--<img src="https://placehold.co/600x400" alt="Placeholder image" class="item"></img>-->
 	</div>
-	
-	<!-- Script to make the hamburger button and the x button work.-->
-	<script>
-		//Function to make the Sidebar visible. Puts the sidebar element into a variable. In the CSS the sidebar is autoamtically transformed off the page. When this function is called, it brings the function back into a visible area.
-		function showSidebar(){
-			const sidebar = document.querySelector('.sidebar')
-			sidebar.style.transform = 'translateX(0%)'
-			
-		}
-		//Function to make the sidebar invisible. It transforms the sidebar out of view of the screen. 
-		function closeSidebar(){
-			const sidebar = document.querySelector('.sidebar')
-			sidebar.style.transform = 'translateX(100%)'
-		}
-	</script>
+
 </body>
 </html>
