@@ -13,7 +13,7 @@ body{
 	background-color: #D6CAA7;
 	font-family: "Ubuntu";
 	font-weight: 500;
-	/*background-image: url('https://placehold.co/600x400');*/
+	background-image: url('https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg');
 }
 
 nav{
@@ -53,13 +53,18 @@ nav li:first-child{
 	display: grid;
 	place-items: center;
 	height: 90vh;
+	
 }
 
 .signin {
 	width: 50vw;
-	background-color: white;
+	background-color: hsla(0, 0%, 100%, 0.7);
 	display: block;
 	text-align: center;
 	padding-top: 10%;
 	padding-bottom: 10%;
+	border-radius: 10px;
+	outline: 4px solid black;
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
 }
