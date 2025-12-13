@@ -10,7 +10,7 @@
 
 body{
 	min-height: 100vh;
-	background-color: #D6CAA7;
+	background-color: #E6B17C;
 	font-family: "Ubuntu";
 	font-weight: 500;
 	/*background-image: url('https://placehold.co/600x400');*/
@@ -18,7 +18,7 @@ body{
 
 nav{
 	background-color: white;
-	box-shadow: 3px 3px 5px rgba(0,0,0,0.1);
+	box-shadow: 3px 3px 5px rgba(0,0,0,0.4);
 }
 
 nav ul{
@@ -59,13 +59,13 @@ nav li:first-child{
 
 .CTA{
 	color: hsl(0, 0%, 100%);
-	background-color: hsl(45, 51%, 24%);
+	background-color: hsl(236, 60%, 53%);
 	border-radius: 20px;
 }
 
 .CTA:hover{
 	color: hsl(0, 0%, 0%);
-	background-color: hsl(45, 51%, 50%);
+	background-color: hsl(236, 60%, 70%);
 	transition: background-color 0.15s linear, color 0.3s linear;
 }
 
@@ -96,7 +96,7 @@ nav li:first-child{
 	width: 100%;
 }
 .activeLink {
-	border-bottom: 2px solid hsl(36, 59%, 61%);
+	border-bottom: 3px solid hsl(0, 0%, 0%);
 }
 
 
@@ -121,7 +121,7 @@ nav li:first-child{
 
 /** CSS for title area**/
 .titlepage {
-	background-color: #D6C44B;
+	background-color: #CF843E;
 	padding: 5rem 0;
 	border-bottom-left-radius: 30%;
 	border-bottom-right-radius: 30%;

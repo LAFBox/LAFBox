@@ -18,22 +18,15 @@
         <div class="signin">
             <h1>Sign into LAFBox</h1>
             <div class="schoolselector">
-                <label for="schools">Choose your school:</label>
-                <select aria-label="List of Schools" id="schools">
-                    <option value="default">Select your school.</option>
-                    <option value="Sample">Sample High School</option>
-                </select>
+                <label for="school">Enter your school name:</label>
+                <input id="school" name="school" list="schools">
+
+                <datalist id="schools">
+                    <option value="sample">
+                </datalist>
+                <br><br>
+                <button id="submitSchool">Submit</button>
             </div>
-            <div class="email">
-                <label for="email">Email:</label>
-                <input name="email" type="email" id="email">
-            </div>
-            <div class="password">
-                <label for="password">Password:</label>
-                <input name="password" type="password" id="password">
-            </div>
-            <button>Sign In</button><br>
-            <t>Don't have an account? </t><a href="#">Create one here.</a>
         </div>
     </div>
 </body>
